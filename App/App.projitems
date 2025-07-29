@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>85be89ef-ff06-4eb4-b882-d319cc66cf70</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>WtfApp</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Engine\Classes\FrameCounter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Engine\Classes\RectangleF.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)App1\SaveLoadLevel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Engine\Classes\WTFHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Engine\GUI\Animation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Engine\GUI\BaseGuiComponent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Engine\GUI\Button.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Engine\GUI\GUIContainer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Engine\GUI\Label.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Engine\GUI\ModalWindow.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Engine\Scene\Scenes\Modal.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Engine\Helpers\DrawHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Main.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)App1\Objects\BaseObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)App1\Objects\GeneratedObj.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)App1\Objects\WorldObj.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)App1\Scenes\LevelEditor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)App1\Scenes\LevelSelector.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)App1\Scenes\MainG.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scenes\MainMenu.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Engine\Scene\Scene.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scenes\Test3 modal.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scenes\Test2.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scenes\Test1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="$(MSBuildThisFileDirectory)Content\Content.mgcb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Content\Content.mgcb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)App1\Scenes\" />
+  </ItemGroup>
+</Project>
